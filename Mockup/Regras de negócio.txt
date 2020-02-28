@@ -1,0 +1,3 @@
+Users: Poderá fazer o cadastro na aplicação via e-mail e também realizar login via e-mail. O usuário poderá reservar alguma casa (que não seja a suas próprias casas ou que esteja com status indisponível) .
+
+Houses: Usuário logado poderá cadastrar uma nova casa, editar ou excluir suas casas quando quiser. Casas cadastradas devem conter uma foto de capa, descrição, localização, preço da diária e o status (Disponível ou Indisponível).
