@@ -8,17 +8,20 @@ class App {
     constructor() {
         this.server = express();
 
-        mongoose.connect('mongodb+srv://admin:admin123@cluster0-gke9r.mongodb.net/devhouse?retryWrites=true&w=majority', {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
+        mongoose.connect(
+            'mongodb+srv://admin:admin123@cluster0-gke9r.mongodb.net/devhouse?retryWrites=true&w=majority',
+            {
+                useNewUrlParser: true,
+                useUnifiedTopology: true,
+            }
+        );
 
         this.middlewares();
         this.routes();
     }
 
     middlewares() {
-        this.server.use(cors()); //Dessa forma qualquer um pode usar a api
+        this.server.use(cors()); // Dessa forma qualquer um pode usar a api
 
         this.server.use(
             '/files',
